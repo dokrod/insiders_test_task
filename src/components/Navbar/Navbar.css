@@ -1,0 +1,29 @@
+.nav {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.link {
+  width: 200px;
+  height: 48px;
+  color: #000;
+  text-decoration: none;
+  line-height: 48px;
+  text-align: center;
+  border: 1px solid #c4c4c4;
+}
+
+.link.active {
+  background-color: #c4c4c4;
+}
+
+.link:hover {
+  background-color: rgba(196, 196, 196, 0.5);
+}

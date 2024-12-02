@@ -1,15 +1,27 @@
 import "./main.css";
 
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import App from "./App";
+import { EditPage } from "./pages/EditPage";
+import { UsersPage } from "./pages/UsersPage";
 
 const container = document.getElementById("root");
 const root = createRoot(container as HTMLDivElement);
 
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+const Root = () => {
+  return (
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route path="edit" element={<EditPage />} />
+
+          <Route path="users" element={<UsersPage />} />
+        </Route>
+      </Routes>
+    </HashRouter>
+  );
+};
+
+root.render(<Root />);
