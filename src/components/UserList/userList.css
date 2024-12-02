@@ -1,0 +1,50 @@
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #e3e8ee;
+}
+
+.user-table-header {
+  border-bottom: 1px solid #e3e8ee;
+}
+
+.user-table-header-cell {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.user-table-row {
+  transition: background-color 0.3s ease;
+}
+
+.user-table-row:hover {
+  background-color: #f9fafb;
+}
+
+.user-table-cell {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e3e8ee;
+  text-align: left;
+}
+
+.user-table-cell.actions {
+  text-align: center;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: scale 0.3s ease;
+}
+
+.delete-button:hover {
+  scale: 1.1;
+}
+
+.delete-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
